@@ -1,0 +1,25 @@
+.image{
+    height: 300px;
+    width: 600px;
+    /* object-fit: contain; */
+    /* object-position: bottom; */
+    /* border-style: solid; */
+}
+#label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.author{
+    width: 250px;
+}
+.label{
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+.peter{
+    width: 50px;
+    height: 50px;
+}

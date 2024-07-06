@@ -1,0 +1,287 @@
+*{
+
+}
+#search_bar{
+    /* background-color: red; */
+}
+body{
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+.image{
+    height: 300px;
+    width: 600px;
+    /* object-fit: contain; */
+    /* object-position: bottom; */
+    /* border-style: solid; */
+}
+.label > img {
+
+}
+input[att="placeholder"]{
+
+}
+#search{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.header{
+    /* height: 80px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style:solid ;
+    border-bottom-color: rgb(228, 228, 228);
+}
+.left{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    /* flex: 1; */
+}
+.ham{
+    height: 40px;
+    margin-top: 10px;
+    /* width: 50px; */
+}
+.you{
+    height: 60px;
+}
+.middle{
+    flex: 1;
+    margin-left: 60px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+#search_bar{
+    flex: 1;
+    height: 42px;
+    padding-left: 10px;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+   
+}
+.image1{
+    margin-top: 15px;
+    margin-left: 60px;
+}
+.search_icon{
+    height: 30px;
+}
+.search_bar::placeholder{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.search_button{
+    height: 45px;
+    width: 70px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+    
+}
+.search_button .tooltip,.mic_button .tooltip{
+    position: absolute;
+    background-color:gray;
+    padding-top:4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space:nowrap ;
+}
+.search_button,.mic_button{
+    position: relative;
+}
+.search_button:hover .tooltip,.mic_button:hover .tooltip{
+    opacity: 1;
+}
+.mic_icon{
+    height: 25px;
+    margin-top: 4px;
+    
+}
+.mic_button{
+    height: 46px;
+    width: 46px;
+    border-radius: 23px;
+    border: none;
+}
+
+.right{
+    width: 200px;
+    margin-right: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+.upload_icon{
+    height: 30px;
+}
+.apps_icon{
+    height: 30px;
+}
+.not_icon{
+    height: 40px;
+}
+.img_icon{
+    height: 40px;
+    border-radius: 20px;
+}
+.sidebar{
+    position: fixed;
+    left: 1;
+    bottom: 0;
+    top: 50px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+
+}
+.home,.explore,.sub,.music,.lib{
+    height: 40px;
+    margin-top: 10px;
+    
+}
+.original{
+    height:70px ;
+}
+.sidebar-link{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-left: 7px;
+
+    /* background-color: blue; */
+    /* margin-bottom: 1px; */
+}
+.sidebar-link div{
+    font-size: 15px;
+    /* flex-direction: column; */
+}
+.sidebar-link:hover{
+    background-color: lightgrey;
+}
+.video-time{
+    background-color: red;
+    position:absolute;
+    right: 20px;
+    bottom: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+}
+.container{
+    margin-top: 60px;
+}
+.title{
+    width: 250px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.title2{
+    width: 250px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.author,.stats{
+    font-size: 15px;
+    color: rgb(96, 96, 96);
+}
+.author{
+    margin-bottom: 5px;
+}
+
+.label{
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 35px;
+    /* display: grid; */
+    /* grid-template-columns: column; */
+    
+}
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+   
+}
+.image1{
+    /* margin-left: 50px; */
+    margin-bottom: 10px;
+    position: relative;
+}
+ .peter{
+     width: 50px;
+     border-radius: 25px;
+      /* display: inline-block; */
+ }
+ .park{
+    width: 50px;
+    border-radius: 25px;
+ }
+
+ .image2{
+    display: inline-block;
+    vertical-align: top; 
+ }
+ .image3{
+   margin-top: 38px;
+ }
+ .image4{
+    display: inline-block;
+    vertical-align: top;
+   
+ }
+ .info{
+    display: inline-block;
+    width: 200px;
+ }
+
+
+
